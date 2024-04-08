@@ -1,0 +1,189 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta name="viewport" conent="width=device-width, initial-scale=1.0" />
+        <title>Development Handin</title>
+        <!-- Importing CSS Styles -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <h1><mark>Competitive Analysis</mark></h1>
+        <div id="part1">
+            <p></p>
+            <h2>Competitive Comaprison Chart</h2>
+            <table id="compare">
+                <tr>
+                    <th>Factor</th>
+                    <th>Amazon</th>
+                    <th>Pintrest</th>
+                    <th>Etsy</th>
+                </tr>
+                <tr>
+                    <td>Aggregator Usage</td>
+                    <td>Good 
+                        <ul>
+                            <li>Shopping cart feature</li>
+                            <li>Displayed in the top right corner </li>
+                            <li>Displays number of items in cart</li>
+                            <li>Still in the same page after adding to <br>cart</li>
+                        </ul>
+                    </td>
+                    <td>Good 
+                        <ul>
+                            <li>Board system</li>
+                            <li>Users can categorize and organize <br> favorite pins into different boards</li>
+                            <li>Still in the same page after adding to <br>favorites</li>
+                        </ul>
+                    </td>
+                    <td>Okay  
+                        <ul>
+                            <li>Shopping cart feature</li>
+                            <li>Displayed in the top right corner</li>
+                            <li>After adding to your cart, you are <br>taken to a different page where <br> you can pay</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Recommendation</td>
+                    <td>Good 
+                        <ul>
+                            <li>Personalized recommendations</li>
+                            <li>Recommendations based on <br> previous purchases/things you might <br> be interested in </li>
+                        </ul>
+                    </td>
+                    <td>Good 
+                        <ul>
+                            <li>Recommendation system based on <br> users' saved pins and boards</li>
+                        </ul>
+                    </td>
+                    <td>Good  
+                        <ul>
+                            <li>Recommendation based on <br> users favorited items and purchasing <br> history</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Access to Favorites/Cart</td>
+                    <td>Good 
+                        <ul>
+                            <li>Access to the shopping cart through <br> an icon</li>
+                            <li>Icon present in all pages of the website</li>
+                        </ul>
+                    </td>
+                    <td>Okay 
+                        <ul>
+                            <li>Access to favorite pins through the <br> profile menu</li>
+                        </ul>
+                    </td>
+                    <td>Good  
+                        <ul>
+                            <li>Can preview cart by hovering over the <br> icon</li>
+                            <li>Icon present in all pages of the website </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Visual Design</td>
+                    <td>Good 
+                        <ul>
+                            <li>Clean and intuitive</li>
+                            <li>Easy understanding</li>
+                        </ul>
+                    </td>
+                    <td>Good 
+                        <ul>
+                            <li>Visually appealing thumbnails and <br> clear organization</li>
+                        </ul>
+                    </td>
+                    <td>Okay  
+                        <ul>
+                            <li>Could be improved for better visibility <br> and organization</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Collaborative</td>
+                    <td>N/A</td>
+                    <td>Good 
+                        <ul>
+                            <li>You can add friends and add to the <br> same board</li>
+                        </ul>
+                    </td>
+                    <td>N/A</td>
+                </tr>
+            </table>
+            <h2>Summary</h2>
+            <p>Amazon’s aggregator usage and recommendation features are good, as it provides a seamless shopping experience 
+                with easy access to the shopping cart and personalized recommendations. Pinterest stands out with its visually 
+                appealing board system and collaborative features, although improving access to favorited items could enhance usability. 
+                Etsy integrates favoriting seamlessly into product listings but could improve access and visibility of favorited items 
+                for a better user experience.</p>
+            
+            <h2>Implementation</h2>
+            <ul>
+                <li>Prominent Aggregator Usage + Easy Access 
+                    <ul>
+                        <li>Ensure easy access to the list/aggregator → prominently displaying it</li>
+                    </ul>
+                </li>
+                <li>Visual Appeal and Organization
+                    <ul>
+                        <li>Create visually appealing and well-organized interface</li>
+                    </ul>
+                </li>
+                <li>Quick Actions
+                    <ul>
+                        <li>Include quick actions such as "Add to Favorites/Cart" buttons on product thumbnails</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h1><mark>Functionality</mark></h1>
+        <div id="part2">
+            <p><b>Theme:</b> Makeup Website</p>
+            <p><b>Intention of App:</b> The intention of the app is to provide users with a 
+                convenient platform to explore and purchase makeup products. Users can browse 
+                through a diverse range of makeup items, filter them based on various categories 
+                such as product type, brand, and price range, sort them based on price or popularity, 
+                and add their preferred items to their shopping cart for purchase.</p>
+            <p><b>Features to Include:</b>
+                <ul>
+                    <li>Filtering Categories:
+                        <ul>
+                            <li>Brand</li>
+                            <li>Product type</li>
+                        </ul>
+                    </li>
+                    <li>Sorting Feature:
+                        <ul>
+                            <li>Price</li>
+                        </ul>
+                    </li>
+                    <li>Aggregate Section: 
+                        <ul>
+                            <li>Shopping cart</li>
+                        </ul>
+                    </li>
+                    <li>Reset Functionality:
+                        <ul>
+                            <li>Reset button</li>
+                        </ul>
+                    </li>
+                    <li>Item Card:
+                        <ul>
+                            <li>Item image (you can reuse a single image for all items)</li>
+                            <li>Item name (this must be unique for each item)</li>
+                            <li>Categories that your filter uses (e.g., price, ingredients)</li>
+                            <li>Field(s) that your sort uses (e.g., price, name)</li>
+                            <li>A button that adds to and removes from the aggregator, depending 
+                                on if the item is already in the aggregator</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div>
+        
+    </body>
+</html>
